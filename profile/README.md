@@ -1,12 +1,5 @@
-## Hi there 👋
+# Rustdrive
 
-<!--
+This project with aims to create a intuitive cloud.
 
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
+I host a nextcloud, but some of my clients are confused over the loads of options they have. Just to look at a files details there are multible tabs and options. So i decided that it is time again for a Project. It propably only will be for learning purposes, but you will never know..
