@@ -1,17 +1,18 @@
 # Rustdrive
 
-![Static Badge](https://img.shields.io/badge/with_love-orange?style=for-the-badge&logo=rust)
-![Static Badge](https://img.shields.io/badge/with_passion-blue?style=for-the-badge&logo=docker&logoColor=white)
-![Static Badge](https://img.shields.io/badge/with_patience-yellow?style=for-the-badge&logo=javascript&logoColor=white)
-![Static Badge](https://img.shields.io/badge/with_magic-purple?style=for-the-badge&logo=bootstrap&logoColor=white)
+The goal of this project is to create a cloud that is easy to use for users
 
-This project with aims to create a intuitive cloud.
+There are many cloud services you can host, but most users are confused by the variety of options available to them. To view file details, there are several tabs and options in Nextcloud. So the aim of this project is to create a cloud that makes cloud services easier. It'll probably just be for learning purposes, but we'll never know...
 
-I host a nextcloud, but some of my clients are confused over the loads of options they have. Just to look at a files details there are multible tabs and options. So i decided that it is time again for a Project. It propably only will be for learning purposes, but you will never know..
+|![Static Badge](https://img.shields.io/badge/with_love-orange?style=for-the-badge&logo=rust)|![Static Badge](https://img.shields.io/badge/with_passion-blue?style=for-the-badge&logo=docker&logoColor=white)|![Static Badge](https://img.shields.io/badge/with_patience-yellow?style=for-the-badge&logo=javascript&logoColor=white)|![Static Badge](https://img.shields.io/badge/with_magic-purple?style=for-the-badge&logo=bootstrap&logoColor=white)|
+
+|---------------------|--------------------|--------------------|---------------------|
+
+## Authors
+
+- [@Soraxem](https://github.com/Soraxem)
 
 ## Structure
-
-Front and Backend are as much seperated as possible. By that they get interchangeable. You could host the frontend on any static webserver and have the backend be on any other Device with Rust and Internet. By that you can alter the design and functionallity of the apps, without touching the Backend. This architecture also ensures that only the API has to be secure.
 
 ```mermaid
 graph TD
