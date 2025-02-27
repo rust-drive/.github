@@ -16,7 +16,8 @@ Front and Backend are as much seperated as possible. By that they get interchang
 ```mermaid
 graph TD
   user --> frontend
-  apps --> frontend
+  apps <--> frontend
+  apps --> backend
   configuration --> frontend
 
   frontend --> backend
