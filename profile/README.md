@@ -11,17 +11,35 @@ I host a nextcloud, but some of my clients are confused over the loads of option
 
 ## Structure
 
-Front and Backend are as much seperated as possible. By that they get interchangeable. You could host the frontend on any static webserver and have the backend be on any other Device with Rust and Internet. By that you can alter the design and functionallity of the apps, without touching the Backend. This architecture also ensures that only the API has to be secure.
+The Server is built like a static webserver. Acess control is built with json files. The API is application agnostic, it just delivers a file-storage backend for the Applications.
 
 ```mermaid
 graph TD
-  user --> frontend
-  apps <--> frontend
-  apps --> backend
-  configuration --> frontend
+  user --> wrapper
+  
+  server --> files
+  server --> apps
+  server --> wrapper
+  wrapper --> apps
+```
 
-  frontend --> backend
-  backend --> database
-  backend --> files
+## Federation
+
+A big goal of this project is smooth and intuitive federation. A server stores users and guests. Guests are users from other servers, that need credentials on this server. 
+
+```mermaid
+graph TD
+  subgraph server-1
+    users-1
+    guests-1
+  end
+
+  subgraph server-2
+    users-2
+    guests-2
+  end
+
+  users-1 --> guests-2
+  users-2 --> guests-1
 
 ```
